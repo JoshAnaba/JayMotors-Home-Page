@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jay Motors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <header id="header">
+            <div id="header-div">
+                <img id="header-img" src="https://img.icons8.com/ultraviolet/40/000000/bus.png" alt="JayMotors logo">
+                <h1 id="header-name">JayMotors</h1>
+            </div>
+            <nav id="nav-bar">
+                <ul>
+                    <li>
+                        <a class="nav-link" href="#about">AboutUs</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#booking">Booking</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#contact">ContactUs</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container">
+            <div id='content1' class="content1">
+                <div>
+                    <h3>Sign in to access your Travel Profile</h3>
+                    <form id="form" action="https://www.freecodecamp.com/email-submit">
+                        <input id="email" type="email" name="email" placeholder="Enter your Email address" class="sign-in" required>
+                        <input id="password" type="password" placeholder="Password" class="sign-in" required>
+                        <input type="submit" id="submit" class="btn" value="Sign In">
+                    </form>
+                </div>
+                <p>Don't have an account? 
+                    <a id="sign-up" href="#">Sign Up</a>
+                     so we can keep track of your <strong>Travel Records</strong>.
+                </p>
+            </div>  
+            <div class="content2">
+                <div id="about">
+                        <section id="about1"><p><strong>JayMotors</strong> is a Transport Company that is all about safe transportation of its customers, their wards and delivery of goods & services of any kind across the nation.</p></section>
+                        <section id="about2"><h2>Our Services</h2>
+                        <ul>
+                            <li>Transportation</li>
+                            <li>Courier Services</li>
+                            <li>Parcel Services</li>
+                            <li>Special-Vehicle for Hire</li>
+                        </ul>
+                    </section>  
+                </div>
+                <div class="content3">
+                    <h2>Here is a peep through some of our buses</h2>
+                        <iframe id='video' width="653" height="367" src="https://www.youtube.com/embed/g1x3EMjjXSc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+    
+            </div>    
+            <div class="content4">
+                <section id="booking">
+                    <div class="form2-heading">
+                        <h2>Book a SafeTrip</h2>
+                        <h3>Where to next?</h3>
+                        <p>From here you're almost there</p>
+                    </div>
+                    <form id="form2">
+                        <select id="dept-ln" name="departure" class="dept-ln">
+                            <option disabled selected>Departure Location</option>
+                            <option value="Aba">Aba</option>
+                            <option value="Benin">Benin</option>
+                            <option value="Calabar">Calabar</option>
+                            <option value="Lagos">Lagos</option>
+                        </select>
+                        <select id="arr-ln" name="arrival" class="arr-ln">
+                            <option disabled selected>Arrival Location</option>
+                            <option value="Aba2">Aba</option>
+                            <option value="Benin2">Benin</option>
+                            <option value="Calabar2">Calabar</option>
+                            <option value="Lagos2">Lagos</option>
+                        </select>
+                        <input type="date" name="dept-dt" id="dept-dt" min="2020-09-01" max="2020-09-01" placeholder="Date">
+                        <button class="btn" id="search">Search</button>
+                    </form>
+
+                    <div><a href="#content1">Back to top</a></div>
+                </section>
+            </div>
+            <footer id="footer">
+                <section id="contact">
+                    For all Enquiries about online booking and technical issues, please call our 24 hours support team
+                    0700JayMotors,
+                    +2349058294199,
+                    +2348101566499<br>
+                    
+                    Email Us:
+                    contact@JayMotors.ng;<br>
+                    
+                    Head Office
+                    ...<br>
+                    
+                    Connect with us.
+                    <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.0002 10.7932C13.133 10.7932 10.7932 13.133 10.7932 16.0002C10.7932 18.8674 13.133 21.2072 16.0002 21.2072C18.8674 21.2072 21.2072 18.8674 21.2072 16.0002C21.2072 13.133 18.8674 10.7932 16.0002 10.7932ZM31.6174 16.0002C31.6174 13.8439 31.6369 11.7072 31.5158 9.55487C31.3947 7.05487 30.8244 4.83612 28.9963 3.008C27.1642 1.17597 24.9494 0.60956 22.4494 0.488467C20.2932 0.367373 18.1564 0.386904 16.0041 0.386904C13.8478 0.386904 11.7111 0.367373 9.55878 0.488467C7.05878 0.60956 4.84003 1.17987 3.0119 3.008C1.17987 4.84003 0.613467 7.05487 0.492373 9.55487C0.371279 11.7111 0.39081 13.8478 0.39081 16.0002C0.39081 18.1525 0.371279 20.2932 0.492373 22.4455C0.613467 24.9455 1.18378 27.1642 3.0119 28.9924C4.84394 30.8244 7.05878 31.3908 9.55878 31.5119C11.715 31.633 13.8517 31.6135 16.0041 31.6135C18.1603 31.6135 20.2971 31.633 22.4494 31.5119C24.9494 31.3908 27.1682 30.8205 28.9963 28.9924C30.8283 27.1603 31.3947 24.9455 31.5158 22.4455C31.6408 20.2932 31.6174 18.1564 31.6174 16.0002ZM16.0002 24.0119C11.5666 24.0119 7.98847 20.4338 7.98847 16.0002C7.98847 11.5666 11.5666 7.98847 16.0002 7.98847C20.4338 7.98847 24.0119 11.5666 24.0119 16.0002C24.0119 20.4338 20.4338 24.0119 16.0002 24.0119ZM24.34 9.53144C23.3049 9.53144 22.4689 8.6955 22.4689 7.66034C22.4689 6.62519 23.3049 5.78925 24.34 5.78925C25.3752 5.78925 26.2111 6.62519 26.2111 7.66034C26.2114 7.90614 26.1632 8.14959 26.0693 8.37674C25.9754 8.60389 25.8376 8.81028 25.6638 8.98409C25.49 9.1579 25.2836 9.29571 25.0564 9.38964C24.8293 9.48356 24.5858 9.53174 24.34 9.53144Z" fill="#254AB7"/>
+                    </svg><a href="#footer"> @jaymotors</a> ;
+                    <svg width="30" height="30" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 0.5C8.33594 0.5 0.5 8.33594 0.5 18C0.5 27.6641 8.33594 35.5 18 35.5C27.6641 35.5 35.5 27.6641 35.5 18C35.5 8.33594 27.6641 0.5 18 0.5ZM26.4102 13.6914C26.4219 13.875 26.4219 14.0664 26.4219 14.2539C26.4219 19.9883 22.0547 26.5938 14.0742 26.5938C11.6133 26.5938 9.33203 25.8789 7.41016 24.6484C7.76172 24.6875 8.09766 24.7031 8.45703 24.7031C10.4883 24.7031 12.3555 24.0156 13.8438 22.8516C11.9375 22.8125 10.3359 21.5625 9.78906 19.8438C10.457 19.9414 11.0586 19.9414 11.7461 19.7656C10.7646 19.5662 9.88232 19.0331 9.24928 18.257C8.61624 17.4808 8.27143 16.5094 8.27344 15.5078V15.4531C8.84766 15.7773 9.52344 15.9766 10.2305 16.0039C9.6361 15.6078 9.14866 15.0711 8.81137 14.4415C8.47408 13.8119 8.29736 13.1088 8.29688 12.3945C8.29688 11.5859 8.50781 10.8477 8.88672 10.207C9.97618 11.5482 11.3357 12.6451 12.8768 13.4264C14.418 14.2078 16.1063 14.6561 17.832 14.7422C17.2188 11.793 19.4219 9.40625 22.0703 9.40625C23.3203 9.40625 24.4453 9.92969 25.2383 10.7734C26.2188 10.5898 27.1562 10.2227 27.9922 9.73047C27.668 10.7344 26.9883 11.582 26.0859 12.1172C26.9609 12.0234 27.8047 11.7812 28.5859 11.4414C27.9961 12.3086 27.2578 13.0781 26.4102 13.6914Z" fill="#254AB7"/>
+                    </svg> <a href="#footer"> @jay_motors</a>
+                    <h3>&copy2020 Copyright : JayMotors</h3>
+                </section>
+                
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
