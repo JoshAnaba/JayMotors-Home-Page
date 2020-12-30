@@ -320,4 +320,6 @@ footer a{
     bottom: 6px;
 }
 
-
+video,iframe{
+    width: 100%;
+}
